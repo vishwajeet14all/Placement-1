@@ -17,7 +17,7 @@
 
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
-const mongoDB = "mongodb+srv://user1:user1@cluster0.gaqmv3e.mongodb.net/?retryWrites=true&w=majority"; 
+const mongoDB = "mongodb+srv://user1:user1@cluster0.gaqmv3e.mongodb.net/PLACEMENT?retryWrites=true&w=majority"; 
 main().catch(err => console.log(err));
 async function main() {
   await mongoose.connect(mongoDB);
